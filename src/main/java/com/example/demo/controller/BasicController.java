@@ -10,7 +10,7 @@ public class BasicController {
 
     @RequestMapping(path = "/")
     public ResponseEntity<String> hello(RequestEntity<String> httpRequest) {
-        return ResponseEntity.ok("hello 3");
+        return ResponseEntity.ok("hello 4");
     }
 
 }
