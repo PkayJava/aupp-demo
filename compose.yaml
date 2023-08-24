@@ -2,7 +2,7 @@ version: '3'
 
 services:
   aupp-demo:
-    build: Dockerfile
+    build: .
     image: aupp-demo
     ports:
       - "8081:8081"

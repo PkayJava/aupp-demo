@@ -19,6 +19,16 @@ pipeline {
                 }
             }
         }
+        stage('deploy') {
+            steps {
+                dir('aupp-demo') {
+                    sh '''
+                        docker-compose down
+                        docker-compose up -d
+                    '''
+                }
+            }
+        }
     }
 
     post {
