@@ -10,7 +10,7 @@ public class BasicController {
 
     @RequestMapping(path = "/")
     public ResponseEntity<String> hello(RequestEntity<String> httpRequest) {
-        return ResponseEntity.ok("<h1>Hello World</h1>");
+        return ResponseEntity.ok("<h1>Hello World from CICD</h1>");
     }
 
 }
